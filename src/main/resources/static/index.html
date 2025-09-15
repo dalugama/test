@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="helloApp">
+<head>
+    <title>Hello World App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.min.js"></script>
+</head>
+<body ng-controller="HelloController">
+    <h1>Hello World Form</h1>
+    <form ng-submit="callHello()">
+        <label>Name (optional):</label>
+        <input type="text" ng-model="name" placeholder="Enter your name">
+        <button type="submit">Say Hello</button>
+    </form>
+    <div ng-if="response">
+        <h3>Response: {{response}}</h3>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
