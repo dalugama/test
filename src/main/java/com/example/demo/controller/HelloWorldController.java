@@ -24,7 +24,7 @@ public class HelloWorldController {
         Map<String, String> response = new HashMap<>();
         response.put("message", message);
 
-         TestInterface td= (J) -> System.out.println("hello "+J);
+         TestInterface td= (J) -> System.out.println("hello bb "+J);
          td.test2("Janaka");
         return response;
     }
